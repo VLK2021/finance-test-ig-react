@@ -1,0 +1,7 @@
+.titleComponent > p {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-top: 1rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem black;
+}
