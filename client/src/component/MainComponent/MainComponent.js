@@ -4,23 +4,14 @@ import {io} from "socket.io-client";
 
 import './MainComponentStyle.css';
 import {tickerAction} from "../../store/tickerSlice";
+import {Ticker} from "../Ticker/Ticker";
+import {names} from "../../constants";
 
 
 const MainComponent = () => {
     const dispatch = useDispatch();
-    const {tickers} = useSelector(store => store.tickers);
+    const {tickers, newTickers} = useSelector(store => store.tickers);
 
-    const names = [
-        'Ticker',
-        'Exchange',
-        'Name',
-        'Price',
-        'Change',
-        'Percent',
-        'Dividend',
-        'Yield',
-        'Last trade',
-    ]
 
     useEffect(() => {
         const socket = io('http://localhost:4000/');
@@ -34,9 +25,17 @@ const MainComponent = () => {
 
     return (
         <div className={'mainComponent width'}>
-            <div className={'names'}>
+            <div className={'names width'}>
                 {
-                    names.map(tick => <h3 className={'names-one'}>{tick}</h3>)
+                    names.map(tick => <h3 className={'names-one flex'} key={tick.id}>{tick.title}</h3>)
+                }
+            </div>
+
+            <div className={'mainComponent-block width'}>
+                {
+                    newTickers.length !== 0 ?
+                        newTickers.map(tick => <Ticker key={tick.ticker} tick={tick}/>) :
+                        tickers.map(tick => <Ticker key={tick.ticker} tick={tick}/>)
                 }
             </div>
         </div>
@@ -44,3 +43,5 @@ const MainComponent = () => {
 };
 
 export {MainComponent};
+
+

@@ -1,9 +1,9 @@
-.mainComponent{
+.mainComponent {
     text-align: center;
+    margin-top: 7rem;
 }
 
-.names{
-    width: 100%;
+.names {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,9 +11,12 @@
     margin-top: 3rem;
 }
 
-.names-one{
+.names-one {
     width: 12%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-decoration: underline;
+}
+
+.mainComponent-block {
+    text-align: center;
+    margin: 1rem 0 0 0;
 }
