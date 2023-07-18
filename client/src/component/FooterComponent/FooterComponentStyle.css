@@ -1,0 +1,21 @@
+.footerComponent {
+    margin-top: 1.95rem;
+    padding: 0.5rem;
+}
+
+img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+}
+
+.footerComponent > p {
+    margin: 0 0.5rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: gray;
+}
+
+.footerComponent > h5 {
+    color: gray;
+}

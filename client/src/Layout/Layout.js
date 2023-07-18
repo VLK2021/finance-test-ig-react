@@ -2,7 +2,7 @@ import React from 'react';
 import {Outlet} from 'react-router-dom';
 
 import './LayoutStyle.css';
-import {TitleComponent} from "../component";
+import {FooterComponent, TitleComponent} from "../component";
 import ChangeIntervalComponent from "../component/ChangeIntervalComponent/ChangeIntervalComponent";
 
 
@@ -24,6 +24,10 @@ const Layout = () => {
 
             <div className={'outlet width'}>
                 <Outlet/>
+            </div>
+
+            <div className={'width'}>
+                <FooterComponent/>
             </div>
         </div>
     );

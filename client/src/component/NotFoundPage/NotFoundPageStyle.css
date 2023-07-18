@@ -1,0 +1,9 @@
+.notFoundPage > p{
+    font-weight: bold;
+    font-size: 3rem;
+    color: var(--var-bg-button);
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-shadow: 0.2rem 0.2rem 0.2rem black;
+    margin-top: 5rem;
+}
