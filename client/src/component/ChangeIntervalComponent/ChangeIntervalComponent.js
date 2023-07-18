@@ -5,7 +5,6 @@ import './ChangeIntervalComponentStyle.css';
 
 
 const ChangeIntervalComponent = () => {
-    //початкове значення шртервалу
     const [interval, setInterval] = useState(5000);
 
     useEffect(() => {
@@ -47,5 +46,5 @@ const ChangeIntervalComponent = () => {
     );
 };
 
-export default ChangeIntervalComponent;
+export {ChangeIntervalComponent};
 

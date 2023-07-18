@@ -1,6 +1,7 @@
 .mainComponent {
     text-align: center;
     margin-top: 3.5rem;
+    min-height: 18.5rem;
 }
 
 .names {

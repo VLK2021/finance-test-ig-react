@@ -21,4 +21,5 @@ select {
     font-weight: bold;
     font-size: 1.1rem;
     box-shadow: 0.2rem 0.2rem 0.2rem black;
+    cursor: pointer;
 }

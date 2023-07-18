@@ -2,8 +2,7 @@ import React from 'react';
 import {Outlet} from 'react-router-dom';
 
 import './LayoutStyle.css';
-import {FooterComponent, TitleComponent} from "../component";
-import ChangeIntervalComponent from "../component/ChangeIntervalComponent/ChangeIntervalComponent";
+import {ChangeIntervalComponent, FooterComponent, TitleComponent} from "../component";
 
 
 const Layout = () => {
