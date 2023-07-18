@@ -1,9 +1,9 @@
-.changeIntervalComponent{
+.changeIntervalComponent {
     margin-top: 2rem;
 }
 
 .changeIntervalComponent > p {
-font-weight: bold;
+    font-weight: bold;
     font-size: 1.3rem;
     color: var(--var-bg-button);
     text-shadow: 0.2rem 0.2rem 0.2rem greenyellow;
