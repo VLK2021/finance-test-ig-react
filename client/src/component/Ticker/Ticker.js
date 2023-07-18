@@ -8,7 +8,6 @@ import {changeName} from "../../constants";
 
 const Ticker = ({tick}) => {
     const [lastChange, setLastChange] = useState(tick.change);
-    const [percent, setPercent] = useState(tick.change_percent);
     const [colorChange, setColorChange] = useState('');
     const [operation, setOperation] = useState('');
 
@@ -25,17 +24,6 @@ const Ticker = ({tick}) => {
         setLastChange(tick.change);
     }, [tick.change]);
 
-    useEffect(() => {
-        if (tick.change_percent > percent) {
-            setColorChange('green');
-            setOperation('+');
-        } else {
-            setColorChange('red');
-            setOperation('-');
-        }
-        setLastChange(tick.change_percent);
-    }, [tick.change_percent]);
-
 
     const deleteTicker = () => {
         dispatch(tickerAction.delTickerFromArr(tick.ticker));
@@ -46,7 +34,7 @@ const Ticker = ({tick}) => {
         <div className={'ticker'}>
             <h4>{tick.ticker} </h4>
             <h4>{tick.exchange} </h4>
-            <h4>{changeName(tick.ticker)}</h4>
+            <h4  className={colorChange}>{changeName(tick.ticker)}</h4>
             <h4>{tick.price} $</h4>
             <h4 className={colorChange}>{operation + tick.change} $</h4>
             <h4 className={colorChange}>{operation + tick.change_percent} %</h4>

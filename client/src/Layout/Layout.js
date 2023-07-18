@@ -3,6 +3,7 @@ import {Outlet} from 'react-router-dom';
 
 import './LayoutStyle.css';
 import {TitleComponent} from "../component";
+import ChangeIntervalComponent from "../component/ChangeIntervalComponent/ChangeIntervalComponent";
 
 
 const Layout = () => {
@@ -15,6 +16,10 @@ const Layout = () => {
 
             <div className={'time width flex'}>
                 {currentTime}
+            </div>
+
+            <div className={'width'}>
+                <ChangeIntervalComponent/>
             </div>
 
             <div className={'outlet width'}>

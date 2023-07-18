@@ -1,0 +1,24 @@
+.changeIntervalComponent{
+    margin-top: 2rem;
+}
+
+.changeIntervalComponent > p {
+font-weight: bold;
+    font-size: 1.3rem;
+    color: var(--var-bg-button);
+    text-shadow: 0.2rem 0.2rem 0.2rem greenyellow;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+select {
+    margin-top: 0.5rem;
+    width: 12rem;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    color: midnightblue;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem black;
+}

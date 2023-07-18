@@ -20,7 +20,7 @@ const tickerSlice = createSlice({
                     state.newTickers.filter(obj => obj.ticker !== action.payload) :
                     state.tickers.filter(obj => obj.ticker !== action.payload)
             }
-        }
+        },
     }
 });
 

@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from 'react';
 
 import './TitleComponentStyle.css';
+import {colors} from "../../constants";
 
 
 
 const TitleComponent = () => {
-    const colors = ['green', 'red', 'blue', 'lightseagreen', 'orange'];
     const [currentColorIndex, setCurrentColorIndex] = useState(0);
 
     useEffect(() => {
