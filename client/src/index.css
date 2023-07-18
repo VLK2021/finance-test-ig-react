@@ -9,6 +9,11 @@
     --var-bg-button: green;
 }
 
+.lightTherm {
+    --var-bg-all: url(./images/fon.jpg) no-repeat center fixed;
+    --var-bg-button: brown;
+}
+
 body {
     background: var(--var-bg-all);
     -webkit-background-size: cover;

@@ -10,3 +10,24 @@
     text-decoration: underline;
     margin-top: 1rem;
 }
+
+.sunMoon {
+    margin-right: 2rem;
+}
+
+.currentTime {
+    margin-left: 2rem;
+}
+
+.sun, .moon {
+    color: var(--var-bg-button);
+    font-size: 1.3rem;
+}
+
+.sun {
+    margin-left: 0.3rem;
+}
+
+.moon {
+    margin-right: 0.3rem;
+}
